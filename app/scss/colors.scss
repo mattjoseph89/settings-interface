@@ -1,0 +1,90 @@
+// background gradient-----------------------------------------------------------------------
+
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+body {
+  @include horizontal-gradient(rgba(222,72,91,1), rgba(43,180,179,1));
+}
+
+// font colors-----------------------------------------------------------------------
+
+
+$body-font-color: rgba(225,225,225,0.5);
+
+$heading-font-color: rgba(225,225,225,0.3);
+
+$integrations-font-color: #0f5958;
+
+$settings-hover-background: darken( rgba(255,255,255,0.25), 10% );
+
+
+
+.modal{
+
+  .settings{
+    h1{
+      color: $heading-font-color;
+    }
+    ul{
+      color: $body-font-color;
+    }
+    a{
+      color: $body-font-color;
+    }
+    li:hover { 
+      background-color: $settings-hover-background;
+      color:$integrations-font-color;
+    }
+    .current {
+      background-color: $settings-hover-background;
+      color:$integrations-font-color;
+    }
+  }
+
+  .integrations{
+    color: $integrations-font-color;
+    .fa-times{
+      color: $integrations-font-color;
+    }
+    .fa-times:hover {
+      background-color: $settings-hover-background;
+    }
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+

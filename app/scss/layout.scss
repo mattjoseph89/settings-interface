@@ -1,0 +1,95 @@
+$body-padding: 12px 0px 0px 50px;
+
+$heading-margin: 40px 0px 0px 50px;
+$heading-padding: 0px 0px 10px 0px;
+
+$integrations-line-height: 30px;
+
+$list-padding: 13px 0px 13px 50px;
+
+$modal-margin: 120px 0px 0px 0px;
+
+$settings-border: thin solid #96707c;
+
+
+
+
+
+
+// body----------------------------------------------------------------------------
+
+.console {
+	display: flex;
+	justify-content: center;
+}
+
+.modal{
+	margin: $modal-margin;
+
+	h1{
+		margin: $heading-margin;
+		padding: $heading-padding;
+	}
+
+	.settings{
+    	border-right: $settings-border;
+
+		li{
+			padding: $list-padding;
+		}
+	}
+
+	.integrations{
+		.fa-times{
+
+			position: relative; 
+			float:right;
+			right: 40px;
+			top: 50px;
+			font-size: 18px;
+		}
+
+		p{
+			padding: $body-padding;
+			line-height: $integrations-line-height;
+		}
+
+
+		.selections{
+			margin: $heading-margin;
+			td {
+				padding-bottom: 40px;
+			}
+
+			.buttons {
+	    		background-color: darken( rgba(255,255,255,0.25), 10% );
+			    border: thick solid #3cb54d;
+			    color: #0f5958;
+			    width: 100px;
+			    height:100px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 50px;
+			    cursor: pointer;
+			}
+
+			.newbuttons {
+	    		background-color: transparent;
+			    border: thick dashed #0f5958;
+			    color: #0f5958;
+			    width: 100px;
+			    height:100px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 50px;
+			    cursor: pointer;
+			}
+		}
+	}
+}
+
+
+
+

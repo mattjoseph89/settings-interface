@@ -1,0 +1,36 @@
+$font-all: Helvetica, sans-serif;
+
+$header-size: 30px;
+$header-weight: 250;
+
+$integrations-size: 18px;
+
+$settings-size: 14px;
+$settings-weight: 450;
+
+
+// body----------------------------------------------------------------------------
+
+
+.modal{
+	h1 {
+		font: 100% $font-all;
+		font-size: $header-size;
+		font-weight: $header-weight;
+	}
+
+	.settings{
+		li{
+			font: 100% $font-all;
+			font-size: $settings-size;
+			font-weight: $settings-weight;
+		}
+	}
+
+	.integrations{
+		p{
+			font: 100% $font-all;
+			font-size: $integrations-size;
+		}
+	}
+}

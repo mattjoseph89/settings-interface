@@ -1,0 +1,156 @@
+body {
+  /* fallback/image non-cover color */
+  background-color: #de485b;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, #de485b 0%, #2bb4b3 100%);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #de485b), color-stop(100%, #2bb4b3));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, #de485b 0%, #2bb4b3 100%);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, #de485b 0%, #2bb4b3 100%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #de485b 0%, #2bb4b3 100%);
+  /* Standard */
+  background: linear-gradient(to right, #de485b 0%, #2bb4b3 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+.modal .settings h1 {
+  color: rgba(225, 225, 225, 0.3);
+}
+
+.modal .settings ul {
+  color: rgba(225, 225, 225, 0.5);
+}
+
+.modal .settings a {
+  color: rgba(225, 225, 225, 0.5);
+}
+
+.modal .settings li:hover {
+  background-color: rgba(230, 230, 230, 0.25);
+  color: #0f5958;
+}
+
+.modal .settings .current {
+  background-color: rgba(230, 230, 230, 0.25);
+  color: #0f5958;
+}
+
+.modal .integrations {
+  color: #0f5958;
+}
+
+.modal .integrations .fa-times {
+  color: #0f5958;
+}
+
+.modal .integrations .fa-times:hover {
+  background-color: rgba(230, 230, 230, 0.25);
+}
+.console {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  margin: 120px 0px 0px 0px;
+}
+
+.modal h1 {
+  margin: 40px 0px 0px 50px;
+  padding: 0px 0px 10px 0px;
+}
+
+.modal .settings {
+  border-right: thin solid #96707c;
+}
+
+.modal .settings li {
+  padding: 13px 0px 13px 50px;
+}
+
+.modal .integrations .fa-times {
+  position: relative;
+  float: right;
+  right: 40px;
+  top: 50px;
+  font-size: 18px;
+}
+
+.modal .integrations p {
+  padding: 12px 0px 0px 50px;
+  line-height: 30px;
+}
+
+.modal .integrations .selections {
+  margin: 40px 0px 0px 50px;
+}
+
+.modal .integrations .selections td {
+  padding-bottom: 40px;
+}
+
+.modal .integrations .selections .buttons {
+  background-color: rgba(230, 230, 230, 0.25);
+  border: thick solid #3cb54d;
+  color: #0f5958;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.modal .integrations .selections .newbuttons {
+  background-color: transparent;
+  border: thick dashed #0f5958;
+  color: #0f5958;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+}
+.modal {
+  display: flex;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  height: 500px;
+  width: 700px;
+  box-shadow: 0px 0px 50px #888888;
+}
+
+.integrations {
+  flex: 2 0 0;
+}
+
+p {
+  display: block;
+}
+
+.settings {
+  flex: 1 0 0;
+}
+.modal h1 {
+  font: 100% Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 250;
+}
+
+.modal .settings li {
+  font: 100% Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.modal .integrations p {
+  font: 100% Helvetica, sans-serif;
+  font-size: 18px;
+}
